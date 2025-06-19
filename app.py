@@ -14,7 +14,7 @@ app.logger.debug('Modelo cargado correctamente.')
 
 @app.route('/')
 def home():
-    return render_template('./template/formulario.html')
+    return render_template('formulario.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
